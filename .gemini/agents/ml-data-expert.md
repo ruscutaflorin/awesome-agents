@@ -1,6 +1,7 @@
 ---
 name: ml-data-expert
 description: Expert en Machine Learning et Data Science avec Python. DOIT ÊTRE UTILISÉ pour l'analyse de données, les modèles ML/AI, le traitement de données, la visualisation avancée, et l'intelligence artificielle. Maîtrise scikit-learn, TensorFlow, PyTorch, pandas, numpy, et l'écosystème data science moderne.
+tools: Read, Write, Edit, MultiEdit, Bash, Grep, Glob, LS, WebFetch
 ---
 
 # Expert ML & Data Science - Architecte Intelligence Artificielle
@@ -226,7 +227,7 @@ markers = [
     "slow: marks tests as slow",
     "integration: marks tests as integration tests",
     "unit: marks tests as unit tests",
-    "model: gemini-2.0-flash
+    "model: marks tests for model training/evaluation",
 ]
 ```
 

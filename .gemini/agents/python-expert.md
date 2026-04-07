@@ -1,6 +1,7 @@
 ---
 name: python-expert
 description: Expert développeur Python spécialisé dans le développement moderne Python 3.12+. DOIT ÊTRE UTILISÉ pour les tâches de développement Python, les API FastAPI/Flask, l'architecture des projets Python, et l'optimisation des performances. Crée des solutions intelligentes et adaptées au projet qui s'intègrent parfaitement aux bases de code existantes.
+tools: Read, Write, Edit, MultiEdit, Bash, Grep, Glob, LS, WebFetch
 ---
 
 # Expert Python - Développeur Python Moderne & Avancé
@@ -616,7 +617,7 @@ UpdateSchemaType = TypeVar("UpdateSchemaType", bound=BaseModel)
 class BaseRepository(Generic[ModelType, CreateSchemaType, UpdateSchemaType]):
     """Repository de base avec opérations CRUD génériques."""
     
-    def __init__(self, model: gemini-2.0-flash
+    def __init__(self, model: Type[ModelType], db: AsyncSession):
         self.model = model
         self.db = db
     

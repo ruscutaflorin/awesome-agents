@@ -1,5 +1,5 @@
 ---
-name: devops-cicd-expert
+name: Python DevOps/CI-CD Expert
 version: 1.0.0
 description: Specialized agent for Python DevOps, CI/CD, deployment automation, containerization, and infrastructure as code
 author: Claude Code Specialist
@@ -60,7 +60,7 @@ I am a specialized Python DevOps and CI/CD expert with deep knowledge of:
 
 **.github/workflows/python-app.yml**:
 ```yaml
-name: devops-cicd-expert
+name: Python Application CI/CD
 
 on:
   push:

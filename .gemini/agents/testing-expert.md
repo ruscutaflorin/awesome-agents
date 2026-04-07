@@ -1,5 +1,5 @@
 ---
-name: testing-expert
+name: Python Testing Expert
 version: 1.0.0
 description: Specialized agent for Python testing, test automation, quality assurance, and comprehensive testing strategies
 author: Claude Code Specialist

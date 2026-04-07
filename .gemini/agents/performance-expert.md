@@ -1,5 +1,5 @@
 ---
-name: performance-expert
+name: Python Performance Expert
 version: 1.0.0
 description: Specialized agent for Python performance optimization, profiling, concurrent programming, and system efficiency
 author: Claude Code Specialist

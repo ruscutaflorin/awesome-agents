@@ -1,5 +1,5 @@
 ---
-name: web-scraping-expert
+name: Python Web Scraping Expert
 version: 1.0.0
 description: Specialized agent for Python web scraping, data extraction, automation, and web crawling with modern async techniques
 author: Claude Code Specialist

@@ -1,5 +1,5 @@
 ---
-name: security-expert
+name: Python Security Expert
 version: 1.0.0
 description: Specialized agent for Python security, cryptography, secure coding practices, vulnerability assessment, and compliance
 author: Claude Code Specialist
