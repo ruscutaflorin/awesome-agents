@@ -1,0 +1,7 @@
+{
+  "experimental": {
+    "enableAgents": true,
+    "plan": true,
+    "modelSteering": true
+  }
+}
