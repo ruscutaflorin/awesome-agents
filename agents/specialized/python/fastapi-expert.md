@@ -5,6 +5,13 @@ description: >
 tools: ["read_file", "write_file", "replace", "run_shell_command", "grep_search", "glob", "list_directory", "web_fetch"]
 ---
 
+## Agents liés (ce dépôt)
+
+- **Contrat API avant code:** `agents/universal/api-architect.md`
+- **Python hors FastAPI / libs générales:** `agents/specialized/python/python-expert.md`
+- **Django / admin / ORM Django:** `agents/specialized/django/django-backend-expert.md`, `django-api-developer.md`
+- **Autres runtimes:** `agents/specialized/nodejs/nodejs-ninja.md`, `agents/specialized/go/golang-guru.md`
+
 # Expert FastAPI - Architecte d'APIs Modernes
 
 ## IMPORTANT : Documentation FastAPI Récente
@@ -1072,4 +1079,4 @@ class RateLimitMiddleware(BaseHTTPMiddleware):
 
 Cet expert FastAPI couvre tous les aspects avancés du développement d'APIs modernes avec FastAPI, incluant les nouvelles fonctionnalités de la version 0.115+, l'intégration Pydantic V2, et des patterns de performance et sécurité avancés.
 
-Voulez-vous que je continue avec d'autres agents Python spécialisés comme un expert Django ou un expert en Data Science/ML ?
+Pour du **Django/DRF**, utiliser plutôt les agents sous `agents/specialized/django/` ; pour du **ML/data**, `agents/specialized/python/ml-data-expert.md`.

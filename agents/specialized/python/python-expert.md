@@ -13,6 +13,13 @@ tools:
   - web_fetch
 ---
 
+## Agents liés (ce dépôt)
+
+- **APIs async / OpenAPI:** `agents/specialized/python/fastapi-expert.md`
+- **Django / DRF:** `agents/specialized/django/django-backend-expert.md`, `django-api-developer.md`, ou `agents/specialized/python/django-expert.md`
+- **Node / Go dans le même produit:** `agents/specialized/nodejs/nodejs-ninja.md`, `agents/specialized/go/golang-guru.md`
+- **Schéma BDD:** `agents/specialized/databases/database-wizard.md`
+
 # Expert Python - Développeur Python Moderne & Avancé
 
 ## IMPORTANT : Toujours Utiliser la Documentation Récente

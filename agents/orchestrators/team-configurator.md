@@ -26,7 +26,7 @@ Analyse the code‑base, pick the right specialists, and keep **CLAUDE.md** curr
    - Record backend framework, frontend framework, DB, build tools, test tools.
 
 3. **Discover agents**  
-   - List files under `~/.claude/agents/**/**.md` for system level subagents and `.claude` folder for project level subagents. 
+   - In **this repository**, list `agents/**/*.md` (or the path where agents are installed, e.g. `~/.claude/agents/**/**.md` when copied system-wide).  
    - Build a table: *agent → tags* (use the first heading line of each file).
 
 4. **Pick specialists**  
@@ -45,8 +45,8 @@ Analyse the code‑base, pick the right specialists, and keep **CLAUDE.md** curr
 6. **Report to user**  
    - Show detected stack.  
    - List the agents added or updated.  
-   - Provide one sample command, e.g.  
-     > Try: “@django-api-developer build a Posts endpoint”.
+   - Provide one sample command aligned with the detected backend, e.g.  
+     > Try: “@fastapi-expert add JWT auth to `/users`” or “@express-engineer add a paginated GET `/posts`”.
 
 ## Delegations
 | Trigger | Delegate | Goal |

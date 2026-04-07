@@ -37,7 +37,8 @@ Main Claude Agent:
    → Tech lead returns Agent Routing Map with SPECIFIC agents
    
 2. I MUST use ONLY the agents listed in the routing map:
-   - If tech-lead says "use django-api-developer" → Use that EXACT agent
+   - If tech-lead says "use fastapi-expert" or "use express-engineer" → Use that EXACT agent
+   - If tech-lead says "use django-api-developer" → Use that EXACT agent (Django projects only)
    - If tech-lead says "use react-component-architect" → Use that EXACT agent
    - DO NOT substitute with generic agents unless specified as fallback
    
@@ -67,12 +68,12 @@ User Request → Main Agent Guesses → Wrong Agent Selected → Task Fails
 When tech-lead returns:
 ```
 ## Available Agents for This Project
-- django-backend-expert: Django tasks
-- django-api-developer: API tasks  
+- fastapi-expert / express-engineer / golang-guru: backend (per detected runtime)
+- django-backend-expert / django-api-developer: Django-only tasks when applicable
 - react-component-architect: React UI
 ```
 
-You MUST use these specific agents, NOT generic alternatives like "backend-developer"
+You MUST use these specific agents, NOT generic alternatives like "backend-developer" when a specialist is listed (e.g. `nodejs-ninja`, `fastapi-expert`, `golang-guru`).
 
 ## High-Level Architecture
 
@@ -94,7 +95,7 @@ The project follows a hierarchical structure:
 
 4. **Specialized Agents** (`agents/specialized/`)
    - Framework-specific experts organized by technology
-   - Subdirectories: django/, react/
+   - Primary backends: `nodejs/`, `python/`, `go/` · Also: `django/`, `react/`, `databases/`, `devops/`, `testing/`
 
 ### Three-Phase Orchestration Workflow (Main Agent Coordinated)
 
@@ -211,24 +212,23 @@ Task 1: Detect Project Technology
 - REASON: Need to identify framework for proper routing
 
 Task 2: Design Authentication Schema  
-- PRIMARY AGENT: database-architect
-- REASON: Framework-agnostic database design
+- PRIMARY AGENT: database-wizard
+- REASON: Framework-agnostic database design (see `agents/specialized/databases/database-wizard.md`)
 
 Task 3: Implement Auth Backend
-- PRIMARY AGENT: django-backend-expert
+- PRIMARY AGENT: fastapi-expert (Python) OR express-engineer (Node) OR golang-guru (Go)
 - FALLBACK AGENT: backend-developer
-- REASON: Django detected in project
+- REASON: Match runtime from project-analyst (primary stack: Node.js / Python / Go)
 
-Task 4: Create Auth API Endpoints
-- PRIMARY AGENT: django-api-developer
+Task 4: Expose Auth API per contract
+- PRIMARY AGENT: same as Task 3, aligned with existing routes
 - FALLBACK AGENT: api-architect
-- REASON: Django REST Framework patterns
+- REASON: Implement OpenAPI or existing API style
 
 ## Available Agents for This Project
 - project-analyst
-- database-architect  
-- django-backend-expert
-- django-api-developer
+- database-wizard
+- fastapi-expert (or express-engineer / golang-guru per stack)
 - code-reviewer
 
 ## CRITICAL INSTRUCTION
@@ -240,17 +240,16 @@ Use ONLY the agents listed above. Do NOT use unlisted framework agents.
 Main Agent: "Based on the tech-lead's routing, I'll now coordinate the implementation:"
 
 1. ✓ Using project-analyst to analyze the codebase
-2. ✓ Using database-architect for auth schema design  
-3. ✓ Using django-backend-expert for implementation
-4. ✓ Using django-api-developer for API endpoints
-5. ✓ Using code-reviewer for security audit
+2. ✓ Using database-wizard for auth schema design  
+3. ✓ Using fastapi-expert (or express-engineer / golang-guru) for implementation
+4. ✓ Using code-reviewer for security audit
 
 [Executes each step with the EXACT agents specified]
 ```
 
 ### What NOT to Do:
 ```
-❌ "I'll use backend-developer" (when tech-lead specified django-backend-expert)
+❌ "I'll use backend-developer" (when tech-lead specified a runtime specialist like fastapi-expert or golang-guru)
 ❌ "I'll skip the tech-lead and choose agents myself" (bypasses routing)
 ```
 
