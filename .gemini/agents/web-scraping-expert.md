@@ -1,11 +1,7 @@
 ---
-name: Python Web Scraping Expert
-version: 1.0.0
-description: Specialized agent for Python web scraping, data extraction, automation, and web crawling with modern async techniques
-author: Claude Code Specialist
-tags: [python, scraping, beautifulsoup, scrapy, selenium, async, data-extraction, automation]
-expertise_level: expert
-category: specialized/python
+name: python-web-scraping-expert
+description: >
+  Specialized agent for Python web scraping, data extraction, automation, and web crawling with modern async techniques
 ---
 
 # Python Web Scraping Expert Agent

@@ -1,11 +1,7 @@
 ---
-name: Python Testing Expert
-version: 1.0.0
-description: Specialized agent for Python testing, test automation, quality assurance, and comprehensive testing strategies
-author: Claude Code Specialist
-tags: [python, testing, pytest, unittest, mocking, coverage, tdd, bdd, automation]
-expertise_level: expert
-category: specialized/python
+name: python-testing-expert
+description: >
+  Specialized agent for Python testing, test automation, quality assurance, and comprehensive testing strategies
 ---
 
 # Python Testing Expert Agent

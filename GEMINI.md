@@ -51,7 +51,7 @@ To use an agent, use the `@` syntax (e.g., `@tech-lead-orchestrator`) to delegat
 `python-expert`, `django-expert`, `fastapi-expert`, `django-api-developer`, `django-orm-expert`, `ml-data-expert`, `web-scraping-expert`
 
 ### ⚛️ Frontend & UI/UX
-`react-component-architect`, `react-nextjs-expert`, `nextjs-architect`, `react-wizard`, `vue-component-architect`, `vue-nuxt-expert`, `vue-state-manager`, `storybook-artist`, `tailwind-artist`
+`react-component-architect`, `react-nextjs-expert`, `nextjs-architect`, `react-wizard`, `storybook-artist`, `tailwind-artist`
 
 ### 💾 Databases & Storage
 `database-wizard`, `postgresql-guru`, `supabase-specialist`
@@ -70,4 +70,4 @@ Some agents are also available as **Skills** (e.g., `code-reviewer`). Use `activ
 
 - **Source of Truth**: Agents are managed in the structured `agents/` directory and synced to `.gemini/agents/`.
 - **Validation**: All non-trivial changes must be reviewed by `@code-reviewer`.
-- **Idiomaticity**: Always prefer framework-specific agents to ensure idiomatic code (e.g., `@laravel-eloquent-expert` for PHP database work).
+- **Idiomaticity**: Always prefer framework-specific agents to ensure idiomatic code (e.g., `@django-orm-expert` for Django database work).

@@ -1,7 +1,16 @@
 ---
 name: tailwind-frontend-expert
-description: MUST BE USED for any Tailwind‑CSS styling, utility‑first refactors, or responsive component work. Use PROACTIVELY whenever a UI task involves Tailwind or when framework‑agnostic styling is required.
-tools: LS, Read, Grep, Glob, Bash, Write, Edit, MultiEdit, WebFetch
+description: >
+  MUST BE USED for any Tailwind‑CSS styling, utility‑first refactors, or responsive component work. Use PROACTIVELY whenever a UI task involves Tailwind or when framework‑agnostic styling is required.
+tools:
+  - list_directory
+  - read_file
+  - grep_search
+  - glob
+  - run_shell_command
+  - write_file
+  - replace
+  - web_fetch
 ---
 
 # Tailwind Frontend Expert – Utility‑First UI Specialist

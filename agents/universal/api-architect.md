@@ -1,7 +1,14 @@
 ---
 name: api-architect
-description: Universal API designer specializing in RESTful design, GraphQL schemas, and modern contract standards. **MUST BE USED** proactively whenever a project needs a new or revised API contract. Produces clear resource models, OpenAPI/GraphQL specs, and guidance on auth, versioning, pagination, and error formats—without prescribing any specific backend technology.
-tools: Read, Grep, Glob, Write, WebFetch, WebSearch
+description: >
+  Universal API designer specializing in RESTful design, GraphQL schemas, and modern contract standards. **MUST BE USED** proactively whenever a project needs a new or revised API contract. Produces clear resource models, OpenAPI/GraphQL specs, and guidance on auth, versioning, pagination, and error formats—without prescribing any specific backend technology.
+tools:
+  - read_file
+  - grep_search
+  - glob
+  - write_file
+  - web_fetch
+  - google_web_search
 ---
 
 # Universal API Architect

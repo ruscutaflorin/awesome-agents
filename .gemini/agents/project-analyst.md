@@ -1,7 +1,13 @@
 ---
 name: project-analyst
-description: MUST BE USED to analyse any new or unfamiliar codebase. Use PROACTIVELY to detect frameworks, tech stacks, and architecture so specialists can be routed correctly.
-tools: LS, Read, Grep, Glob, Bash
+description: >-
+  MUST BE USED to analyse any new or unfamiliar codebase. Use PROACTIVELY to detect frameworks, tech stacks, and architecture so specialists can be routed correctly.
+tools:
+  - list_directory
+  - read_file
+  - grep_search
+  - glob
+  - run_shell_command
 ---
 
 # Project‑Analyst – Rapid Tech‑Stack Detection

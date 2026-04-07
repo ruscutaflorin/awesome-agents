@@ -1,9 +1,9 @@
 ---
 name: documentation-specialist
-description: MUST BE USED to craft or update project documentation. Use PROACTIVELY after major features, API changes, or when onboarding developers. Produces READMEs, API specs, architecture guides, and user manuals; delegates to other agents for deep tech details.
-tools: LS, Read, Grep, Glob, Bash, Write
+description: >
+  MUST BE USED to craft or update project documentation. Use PROACTIVELY after major features, API changes, or when onboarding developers. Produces READMEs, API specs, architecture guides, and user manuals; delegates to other agents for deep tech details.
+tools: ["list_directory", "read_file", "grep_search", "glob", "run_shell_command", "write_file"]
 ---
-
 # Documentation‑Specialist – Clear & Complete Tech Writing
 
 ## Mission

@@ -1,7 +1,8 @@
 ---
 name: fastapi-expert
-description: Expert FastAPI spécialisé dans les APIs modernes hautes performances. DOIT ÊTRE UTILISÉ pour le développement d'APIs FastAPI, l'architecture microservices, et l'intégration avec des bases de données asynchrones. Maîtrise FastAPI 0.115+, Pydantic V2, et les patterns API modernes.
-tools: Read, Write, Edit, MultiEdit, Bash, Grep, Glob, LS, WebFetch
+description: >
+  Expert FastAPI spécialisé dans les APIs modernes hautes performances. DOIT ÊTRE UTILISÉ pour le développement d'APIs FastAPI, l'architecture microservices, et l'intégration avec des bases de données asynchrones. Maîtrise FastAPI 0.115+, Pydantic V2, et les patterns API modernes.
+tools: ["read_file", "write_file", "replace", "run_shell_command", "grep_search", "glob", "list_directory", "web_fetch"]
 ---
 
 # Expert FastAPI - Architecte d'APIs Modernes
@@ -349,7 +350,7 @@ class UserBase(BaseModel):
     email: EmailStr = Field(description="Adresse email unique")
     username: Username = Field(description="Nom d'utilisateur unique")
     full_name: Optional[str] = Field(None, max_length=200, description="Nom complet")
-    phone: Optional[PhoneNumber] = Field(None, description="Numéro de téléphone")
+    phone: Optional[PhoneNumber] = Field(None, description="Nom de téléphone")
     
     @field_validator("email")
     @classmethod

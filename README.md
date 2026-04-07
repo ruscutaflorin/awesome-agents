@@ -78,11 +78,6 @@ All subagents are defined as Markdown files in the `.gemini/agents/` directory. 
 
 ### ⚛️ Frontend Framework Experts
 *   `@react-component-architect`, `@react-nextjs-expert`
-*   `@vue-component-architect`, `@vue-nuxt-expert`, `@vue-state-manager`
-
-### 🐘 PHP / 💎 Ruby Experts
-*   `@laravel-backend-expert`, `@laravel-eloquent-expert`
-*   `@rails-backend-expert`, `@rails-api-developer`, `@rails-activerecord-expert`
 
 ---
 

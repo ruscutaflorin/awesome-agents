@@ -1,8 +1,14 @@
 ---
 name: code-reviewer
-description: Expert security-aware code reviewer specializing in identifying vulnerabilities, architectural inconsistencies, and performance bottlenecks. MUST BE USED for rigorous validation of any feature, bug-fix, or pull-request before merging to the main branch. Delivers a high-fidelity, severity-tagged report with actionable remediation steps.
-tools: Read, Grep, Glob, LS, Bash, WebSearch
-model: opus
+description: >
+  Expert security-aware code reviewer specializing in identifying vulnerabilities, architectural inconsistencies, and performance bottlenecks. MUST BE USED for rigorous validation of any feature, bug-fix, or pull-request before merging to the main branch. Delivers a high-fidelity, severity-tagged report with actionable remediation steps.
+tools:
+  - read_file
+  - grep_search
+  - glob
+  - list_directory
+  - run_shell_command
+  - google_web_search
 ---
 
 # Code Reviewer: The Ultimate Quality Gate

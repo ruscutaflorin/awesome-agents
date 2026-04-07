@@ -94,7 +94,7 @@ The project follows a hierarchical structure:
 
 4. **Specialized Agents** (`agents/specialized/`)
    - Framework-specific experts organized by technology
-   - Subdirectories: laravel/, django/, rails/, react/, vue/
+   - Subdirectories: django/, react/
 
 ### Three-Phase Orchestration Workflow (Main Agent Coordinated)
 
@@ -232,7 +232,7 @@ Task 4: Create Auth API Endpoints
 - code-reviewer
 
 ## CRITICAL INSTRUCTION
-Use ONLY the agents listed above. Do NOT use laravel, rails, or other framework agents.
+Use ONLY the agents listed above. Do NOT use unlisted framework agents.
 ```
 
 ### Step 3: Main Agent Executes Plan
@@ -251,7 +251,6 @@ Main Agent: "Based on the tech-lead's routing, I'll now coordinate the implement
 ### What NOT to Do:
 ```
 ❌ "I'll use backend-developer" (when tech-lead specified django-backend-expert)
-❌ "I'll use rails-api-developer" (wrong framework)
 ❌ "I'll skip the tech-lead and choose agents myself" (bypasses routing)
 ```
 

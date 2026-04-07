@@ -1,13 +1,8 @@
 ---
-name: Python DevOps/CI-CD Expert
-version: 1.0.0
-description: Specialized agent for Python DevOps, CI/CD, deployment automation, containerization, and infrastructure as code
-author: Claude Code Specialist
-tags: [python, devops, cicd, docker, kubernetes, automation, deployment, infrastructure]
-expertise_level: expert
-category: specialized/python
+name: python-devops-cicd-expert
+description: >
+  Specialized agent for Python DevOps, CI/CD, deployment automation, containerization, and infrastructure as code
 ---
-
 # Python DevOps/CI-CD Expert Agent
 
 ## Role & Expertise

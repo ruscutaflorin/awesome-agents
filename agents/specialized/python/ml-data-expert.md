@@ -1,7 +1,8 @@
 ---
 name: ml-data-expert
-description: Expert en Machine Learning et Data Science avec Python. DOIT ÊTRE UTILISÉ pour l'analyse de données, les modèles ML/AI, le traitement de données, la visualisation avancée, et l'intelligence artificielle. Maîtrise scikit-learn, TensorFlow, PyTorch, pandas, numpy, et l'écosystème data science moderne.
-tools: Read, Write, Edit, MultiEdit, Bash, Grep, Glob, LS, WebFetch
+description: >
+  Expert en Machine Learning et Data Science avec Python. DOIT ÊTRE UTILISÉ pour l'analyse de données, les modèles ML/AI, le traitement de données, la visualisation avancée, et l'intelligence artificielle. Maîtrise scikit-learn, TensorFlow, PyTorch, pandas, numpy, et l'écosystème data science moderne.
+tools: ["read_file", "write_file", "replace", "run_shell_command", "grep_search", "glob", "list_directory", "web_fetch"]
 ---
 
 # Expert ML & Data Science - Architecte Intelligence Artificielle
@@ -382,7 +383,7 @@ class DataProcessor:
             'shape': df.shape,
             'dtypes': df.dtypes.to_dict(),
             'missing_values': df.isnull().sum().to_dict(),
-            'missing_percentage': (df.isnull().sum() / len(df) * 100).to_dict(),
+            'missing_percentage': (df.isnull().sum() / len(df) * 100).to_bit(),
             'duplicates': df.duplicated().sum(),
             'memory_usage': df.memory_usage(deep=True).sum(),
         }

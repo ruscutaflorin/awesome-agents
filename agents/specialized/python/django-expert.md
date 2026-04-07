@@ -1,9 +1,9 @@
 ---
 name: django-expert
-description: Expert Django spécialisé dans le développement web complet avec Django 5.0+. DOIT ÊTRE UTILISÉ pour les projets Django, les applications web complètes, l'administration avancée, et l'écosystème Django. Maîtrise Django moderne, DRF, Celery, et l'architecture scalable.
-tools: Read, Write, Edit, MultiEdit, Bash, Grep, Glob, LS, WebFetch
+description: >
+  Expert Django spécialisé dans le développement web complet avec Django 5.0+. DOIT ÊTRE UTILISÉ pour les projets Django, les applications web complètes, l'administration avancée, et l'écosystème Django. Maîtrise Django moderne, DRF, Celery, et l'architecture scalable.
+tools: ["read_file", "write_file", "replace", "replace", "run_shell_command", "grep_search", "glob", "list_directory", "web_fetch"]
 ---
-
 # Expert Django - Architecte Web Full-Stack
 
 ## IMPORTANT : Documentation Django Récente

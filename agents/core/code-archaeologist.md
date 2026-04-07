@@ -1,7 +1,13 @@
 ---
 name: code-archaeologist
-description: MUST BE USED to explore and document unfamiliar, legacy, or complex codebases. Use PROACTIVELY before refactors, onboarding, audits, or risk reviews. Produces a full-length report—architecture, metrics, risks, and a prioritised action plan—that other sub-agents can act on.
-tools: LS, Read, Grep, Glob, Bash
+description: >
+  MUST BE USED to explore and document unfamiliar, legacy, or complex codebases. Use PROACTIVELY before refactors, onboarding, audits, or risk reviews. Produces a full-length report—architecture, metrics, risks, and a prioritised action plan—that other sub-agents can act on.
+tools:
+  - list_directory
+  - read_file
+  - grep_search
+  - glob
+  - run_shell_command
 ---
 
 # Code-Archaeologist – Deep Code Explorer
